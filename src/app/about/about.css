@@ -1,0 +1,151 @@
+.about__container{
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  
+}
+.about__p{
+width: 100%;
+margin-left: 12%;
+}
+.about__me{
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+     transparent,
+    transparent);
+  display: grid;
+  place-items: center;
+}
+.about__me-image{
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(15deg);
+  transition: var(--transition);
+}
+.about__me-image:hover{
+  transform: rotate(0);
+}
+.about__cards{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 1.5rem;
+}
+.about__card{
+  background:transparent;
+  border: 4px solid #6a6a6a ;
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+}
+.about__card:hover{
+  background: transparent;
+  border-color:  #53c28b;
+  cursor: pointer;
+}
+/* 75 86 90 */
+.container{
+  width:85%;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 1000;
+}
+h1{
+  font-size: 2rem;
+}
+section{
+  margin-top: 8rem;
+}
+section > h2 ,
+section > h5 {
+  font-size: 3.8rem;
+  text-align: center;
+  background: linear-gradient(to bottom,#194c4b,#bbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+section > h2{
+  color:#53c28b;
+  margin-bottom: 3rem;
+}
+.ima{
+  object-fit: cover;
+}
+.about__icon{
+  color: #53c28b;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.about__card h5{
+  font-size: 1rem;
+}
+.about__card small{
+  font-size: 0.7rem;
+}
+.about__content p{
+  margin: 2rem 0 2rem;
+}
+.home__img{
+  margin-right: 30%;
+  background: url(https://res.cloudinary.com/dxig9eqix/image/upload/v1687075155/profile_ad8gac.jpg);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb( 255 255 255/30% );
+  order: 1;
+  justify-self: center;
+  width:  300px;
+  height: 300px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+  }
+  @keyframes profile__animate {
+    0%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+     50%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    100%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+}
+@media screen and (max-width:1024px){
+  .about__container{
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me{
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content p{
+    margin: 1rem 0 1rem;
+  }
+  .about__cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about__me{
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content{
+    text-align: center;
+  }
+  .about__content p{
+    margin: 1.5rem 0;
+  }
+}
