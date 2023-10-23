@@ -51,8 +51,7 @@ const Navbar = () => {
           {link.title}
         </Link>))
         }
-          <Button url="https://res.cloudinary.com/dxig9eqix/image/upload/v1687271153/JigmeeCV1_mlbn77.pdf" text="Check My Resume" />
-        
+<Button url="https://res.cloudinary.com/dxig9eqix/image/upload/v1698089630/gymnt3it25nd1c1yhunu.pdf" text="Check My Resume" />
         </div>
     </div>
   )
